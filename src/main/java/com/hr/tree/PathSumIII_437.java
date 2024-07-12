@@ -8,6 +8,7 @@ import java.util.HashMap;
  */
 public class PathSumIII_437 {
 
+    // 暴力解法
     public int pathSum(TreeNode root, int targetSum) {
         if (root == null) return 0;
         int res = this.rootSum(root, targetSum);
@@ -26,13 +27,16 @@ public class PathSumIII_437 {
     }
 
     int res;
+    // 记忆搜索
     public int pathSumV1(TreeNode root, int targetSum) {
+        if (root == null) return 0;
         HashMap<Long, Integer> map = new HashMap<>();
         map.put(0L, 1);
         this.dfs(root, root.val, targetSum,  map);
         return res;
     }
 
+    // val: 前缀和
     private void dfs(TreeNode root, long val, int targetSum, HashMap<Long, Integer> map) {
         if (map.containsKey(val - targetSum)) res += map.get(val - targetSum);
         map.put(val, map.getOrDefault(val, 0) + 1);

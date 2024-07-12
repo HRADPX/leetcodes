@@ -35,34 +35,4 @@ public class R_Connect_117 {
         }
         return root;
     }
-
-
-    public Node connectV1(Node root) {
-
-        if (root == null) return null;
-        Node dummy = new Node();
-        Node p = dummy;
-
-        Node node = root;
-
-        while (node != null) {
-
-            p.next = null;
-            dummy = p;
-
-            while (node != null) {
-                if (node.left != null) {
-                    dummy.next = node.left;
-                    dummy = node.left;
-                }
-                if (node.right != null) {
-                    dummy.next = node.right;
-                    dummy = node.right;
-                }
-                node = node.next;
-            }
-            node = p.next;
-        }
-        return root;
-    }
 }

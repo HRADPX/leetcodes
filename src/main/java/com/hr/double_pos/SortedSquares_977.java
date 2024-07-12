@@ -3,6 +3,9 @@ package com.hr.double_pos;
 /**
  * @author huangran <huangran@kuaishou.com>
  * Created on 2024-03-12
+ *
+ * 给一个非递减数组，返回每个数字的平方，也结果也需要排序
+ * [-4,-1,0,3,10] ==> [0,1,9,16,100]
  */
 public class SortedSquares_977 {
 

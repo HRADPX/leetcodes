@@ -88,9 +88,6 @@ public class X_CountRangeSum_327 {
         return ret;
     }
 
-
-
-
     public static void main(String[] args) {
 
         X_CountRangeSum_327 instance = ReflectUtils.getInstance(X_CountRangeSum_327.class);

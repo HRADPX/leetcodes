@@ -50,7 +50,7 @@ public class MaxSumBST_1373 {
     }
 
 
-    class Solution {
+    static class Solution {
         static final int INF = 0x3f3f3f3f;
         int res;
 

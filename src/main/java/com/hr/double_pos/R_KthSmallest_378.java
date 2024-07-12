@@ -52,6 +52,10 @@ public class R_KthSmallest_378 {
         return min;
     }
 
+    // * 1  5  9
+    // * 10 11 13
+    // * 12 13 15
+    // mid = 8
     private boolean check(int[][] matrix, int mid, int k, int n) {
 
         int i = n - 1, j = 0, count = 0;

@@ -3,6 +3,8 @@ package com.hr.tree;
 /**
  * @author huangran <huangran@kuaishou.com>
  * Created on 2024-02-26
+ *
+ * 和 1273 题相似
  */
 public class SS_LongestZigZag_1372 {
 
@@ -12,6 +14,7 @@ public class SS_LongestZigZag_1372 {
         return rs;
     }
 
+    // 后序遍历
     private Result dfs(TreeNode root) {
         if (root == null) return null;
         Result left = this.dfs(root.left);

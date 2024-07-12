@@ -28,7 +28,7 @@ public class MaxSubarraySumCircular_918 {
             curMaxSum = Math.max(curMaxSum, 0);
             curMinSum = Math.min(curMinSum, 0);
         }
-        if (max < 0) return max;
+        if (max < 0) return max;  // max < 0 表示全部是负数，这时 max 就是最大的负数
         return Math.max(max, sum - min);
     }
 

@@ -1,12 +1,17 @@
 package com.hr.tree;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
+
+import com.hr.utils.ReflectUtils;
 
 /**
  * @author huangran <huangran@kuaishou.com>
  * Created on 2024-02-19
+ *
+ * 二叉树的层序遍历，递归版
  */
 public class LevelOrder_102 {
 
@@ -21,10 +26,16 @@ public class LevelOrder_102 {
         if (root == null) return;
 
         if (rs.size() < depth) {
-            rs.addFirst(new ArrayList<>());
+            rs.addLast(new ArrayList<>());
         }
+        rs.get(depth - 1).add(root.val);
         traversal(root.left, rs, depth + 1);
         traversal(root.right, rs, depth + 1);
-        rs.get(rs.size() - depth).add(root.val);
+    }
+
+    public static void main(String[] args) {
+
+        TreeNode root = TreeNodeUtils.buildBalanceTreeByList(Arrays.asList(1, 2, 3, 4, 5, 6, 7));
+        System.out.println(ReflectUtils.getInstance(LevelOrder_102.class).levelOrder(root));
     }
 }

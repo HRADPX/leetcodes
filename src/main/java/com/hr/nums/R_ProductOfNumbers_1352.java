@@ -25,6 +25,7 @@ public class R_ProductOfNumbers_1352 {
         }
     }
 
+    // 1 2 3 4 5
     public int getProduct(int k) {
         if (products.size() <= k) {
             return 0;

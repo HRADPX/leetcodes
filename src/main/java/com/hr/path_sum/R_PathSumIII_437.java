@@ -18,7 +18,7 @@ public class R_PathSumIII_437 {
         return res;
     }
 
-    private int rootSum(TreeNode root, int targetSum) {
+    private int rootSum(TreeNode root, long targetSum) {
         if (root == null) return 0;
         int res = 0;
         if (root.val == targetSum) res++;

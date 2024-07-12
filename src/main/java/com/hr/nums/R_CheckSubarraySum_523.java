@@ -9,6 +9,9 @@ import com.hr.utils.ReflectUtils;
  * @author huangran <huangran@kuaishou.com>
  * Created on 2024-03-18
  * 这题和 327 很像
+ *
+ * 相似题
+ *  974. 和可被 K 整除的子数组
  */
 public class R_CheckSubarraySum_523 {
 

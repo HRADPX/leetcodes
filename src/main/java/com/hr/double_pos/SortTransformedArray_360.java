@@ -7,6 +7,10 @@ import com.hr.utils.ReflectUtils;
 /**
  * @author huangran <huangran@kuaishou.com>
  * Created on 2024-03-13
+ *
+ * 给一个排好序的数组 nums 和整数 a、b、c,计算 f(x) = ax^2+bx+c, 结果按照升序返回。
+ *
+ * 双指针，找到抛物线的对称轴，从两边遍历，判断
  */
 public class SortTransformedArray_360 {
 

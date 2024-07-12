@@ -7,6 +7,8 @@ import java.util.Map;
 /**
  * @author huangran <huangran@kuaishou.com>
  * Created on 2024-02-19
+ *
+ * 二叉树的宽度
  */
 public class R_WidthOfBinaryTree_662 {
 
@@ -28,16 +30,6 @@ public class R_WidthOfBinaryTree_662 {
         ans = Math.max(ans, num - map.get(level) + 1);
         this.dfs(root.left, map, level + 1, num * 2);
         this.dfs(root.right, map, level + 1, num * 2 + 1);
-    }
-
-    private int dfsV1(TreeNode root, Map<Integer, Integer> map, int level, int num) {
-        if (root == null) return 0;
-        // 存当前层第一个节点的序号
-        map.putIfAbsent(level, num);
-        int result = num - map.get(level) + 1;
-        int left = this.dfsV1(root.left, map, level + 1, num * 2);
-        int right = this.dfsV1(root.right, map, level + 1, num * 2 + 1);
-        return Math.max(result, Math.max(left, right));
     }
 
     // 层序遍历

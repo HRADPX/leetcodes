@@ -9,6 +9,9 @@ import com.hr.utils.ReflectUtils;
 /**
  * @author huangran <huangran@kuaishou.com>
  * Created on 2024-02-23
+ *
+ * 一个链表，一棵二叉树，判断二叉树是否存在一条路径与链表相同，
+ * 不要求到从根节点开始，也不要求到叶子节点结束。
  */
 public class R_IsSubPath_1367 {
 

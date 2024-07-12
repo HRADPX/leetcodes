@@ -15,7 +15,7 @@ public class R_PathSumIV_666 {
     public int pathSum(int[] nums) {
 
         if (nums.length == 0) return 0;
-        for (int num : nums) map.put(num / 10, num % 10);
+        for (int num : nums) map.put(num / 10, num % 10);  // 存储节点和值
         dfs(nums[0] / 10, 0);
         return ans;
     }

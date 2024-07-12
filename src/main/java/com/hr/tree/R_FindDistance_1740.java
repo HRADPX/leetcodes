@@ -3,6 +3,9 @@ package com.hr.tree;
 /**
  * @author huangran <huangran@kuaishou.com>
  * Created on 2024-02-28
+ *
+ * 给定一个二叉树，树中的每个节点的值都不相同，再给两个节点值 p 和 q，保证 p 和 q 都在树中，
+ * 求 p 和 q 之间的距离，树的边权视为 1
  */
 public class R_FindDistance_1740 {
 

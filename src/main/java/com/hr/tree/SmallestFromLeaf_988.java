@@ -3,6 +3,8 @@ package com.hr.tree;
 /**
  * @author huangran <huangran@kuaishou.com>
  * Created on 2024-03-04
+ *
+ * 从叶子节点开始的最小字符串
  */
 public class SmallestFromLeaf_988 {
 

@@ -3,6 +3,9 @@ package com.hr.double_pos;
 /**
  * @author huangran <huangran@kuaishou.com>
  * Created on 2024-03-14
+ *
+ * 给一个数组，移除重复的数，返回不同数的个数
+ * [1,1,2,2,3]  -> 3
  */
 public class RemoveDuplicates_26 {
 

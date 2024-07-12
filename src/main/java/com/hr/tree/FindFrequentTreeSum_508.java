@@ -12,6 +12,8 @@ import com.hr.utils.ReflectUtils;
 /**
  * @author huangran <huangran@kuaishou.com>
  * Created on 2024-02-20
+ *
+ * 子树元素和的最大值
  */
 public class FindFrequentTreeSum_508 {
 

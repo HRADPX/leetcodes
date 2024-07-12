@@ -3,6 +3,8 @@ package com.hr.tree;
 /**
  * @author huangran <huangran@kuaishou.com>
  * Created on 2023-06-16
+ *
+ * 二叉树最大路径和，不一定经过根节点
  */
 public class MaxPathSum_124 {
 

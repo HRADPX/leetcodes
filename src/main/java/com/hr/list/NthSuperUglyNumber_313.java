@@ -37,6 +37,7 @@ public class NthSuperUglyNumber_313 {
     public static void main(String[] args) {
 
         NthSuperUglyNumber_313 instance = ReflectUtils.getInstance(NthSuperUglyNumber_313.class);
-        System.out.println(instance.nthSuperUglyNumber(12, new int[] {2, 7, 13, 19}));
+//        System.out.println(instance.nthSuperUglyNumber(12, new int[] {2, 7, 13, 19, 7, 13, 19}));
+        System.out.println(instance.nthSuperUglyNumber(12, new int[] {2, 3, 5}));
     }
 }

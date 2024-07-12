@@ -8,6 +8,7 @@ import java.util.Set;
 /**
  * @author huangran <huangran@kuaishou.com>
  * Created on 2024-02-18
+ * 给定一棵二叉树，依次从左往右每次收集并删除所有叶子节点，重复如上操作直至树为空。
  */
 public class R_FindLeavesOfTree_366 {
 
@@ -20,6 +21,9 @@ public class R_FindLeavesOfTree_366 {
         return res;
     }
 
+    /**
+     * 思路: 递归层序遍历
+     */
     private int dfs(TreeNode root, List<List<Integer>> rs) {
         if (root == null) return 0;
         int left = dfs(root.left, rs);

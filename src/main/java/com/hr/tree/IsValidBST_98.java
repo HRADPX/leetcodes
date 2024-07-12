@@ -9,13 +9,13 @@ public class IsValidBST_98 {
     TreeNode val;
     public boolean isValidBST(TreeNode root) {
         if (root == null) return true;
-        boolean left = isValidBST(root.left);
+        boolean left = this.isValidBST(root.left);
         if (!left) return false;
         if (val != null && val.val >= root.val)
             return false;
         else
             val = root;
-        return isValidBST(root.right);
+        return this.isValidBST(root.right);
     }
 
 

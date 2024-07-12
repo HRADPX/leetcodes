@@ -5,6 +5,11 @@ import java.util.LinkedList;
 /**
  * @author huangran <huangran@kuaishou.com>
  * Created on 2024-02-20
+ *
+ * 判断给定的两个值对应的节点是否是堂兄弟节点
+ *
+ * 思路1: 层序遍历，如果是堂兄弟节点，那一定是在同一层
+ * 思路2: 遍历二叉树，找到 x 和 y，记录所在的层，判断是否在同一层
  */
 public class S_IsCousins_993 {
 
@@ -60,7 +65,7 @@ public class S_IsCousins_993 {
     boolean terminate;
     public boolean isCousinsV1(TreeNode root, int x, int y) {
 
-        this.floor(root, 0, x, y);
+        this.floor(root, 1, x, y);
         return rs;
     }
 

@@ -23,11 +23,12 @@ public class SS_LcaDeepestLeaves_1123 {
 
     private int dfsV1(TreeNode node, int depth) {
         if (node == null) {
-            maxDepth = Math.max(maxDepth, depth);
-            return depth;
+            maxDepth = Math.max(maxDepth, depth - 1);
+            return depth - 1;
         }
         int left = dfsV1(node.left, depth + 1);
         int right = dfsV1(node.right, depth + 1);
+        // 后序遍历
         if(left == right && left == maxDepth) rs = node;
         return Math.max(left, right);
     }

@@ -7,6 +7,9 @@ import java.util.List;
 /**
  * @author huangran <huangran@kuaishou.com>
  * Created on 2024-02-19
+ *
+ * 每层的最大值
+ * 如果知道最大有多少层，可以通过递归遍历，创建的一个数组，每次判断是否最大
  */
 public class LargestValues_515 {
 
