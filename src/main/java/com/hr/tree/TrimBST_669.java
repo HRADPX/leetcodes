@@ -1,5 +1,10 @@
 package com.hr.tree;
 
+import java.io.File;
+import java.io.FileInputStream;
+
+import org.apache.commons.io.FileUtils;
+
 /**
  * @author huangran <huangran@kuaishou.com>
  * Created on 2024-02-19
@@ -28,5 +33,14 @@ public class TrimBST_669 {
         root.left = this.trimBST2(root.left, low, high);
         root.right = this.trimBST2(root.right, low, high);
         return root;
+    }
+
+    public static void main(String[] args) throws Exception {
+
+        File file = new File("./copy");
+        FileInputStream in = new FileInputStream(file);
+        File f = new File("/Users/hr/Desktop/f.docx");
+        f.createNewFile();
+        FileUtils.copyToFile(in, f);
     }
 }
