@@ -11,10 +11,43 @@ import com.hr.utils.ReflectUtils;
  * @author huangran <huangran@kuaishou.com>
  * Created on 2024-02-19
  *
- * 二叉树的层序遍历，递归版
+ * 二叉树的层序遍历
  */
 public class LevelOrder_102 {
 
+    /**
+     * 迭代实现
+     */
+    public List<List<Integer>> levelOrder2(TreeNode root) {
+        List<List<Integer>> rs = new ArrayList<>();
+        if (root == null) {
+            return rs;
+        }
+        LinkedList<TreeNode> queue = new LinkedList<>();
+        queue.add(root);
+
+        while (!queue.isEmpty()) {
+            // 当前层节点的数量
+            int levelSize = queue.size();
+            List<Integer> list = new ArrayList<>();
+            for (int i = 0; i < levelSize; i++) {
+                TreeNode node = queue.poll();
+                list.add(node.val);
+                if (node.left != null) {
+                    queue.add(node.left);
+                }
+                if (node.right != null) {
+                    queue.add(node.right);
+                }
+            }
+            rs.add(list);
+        }
+        return rs;
+    }
+
+    /**
+     * 递归版
+     */
     public List<List<Integer>> levelOrder(TreeNode root) {
         LinkedList<List<Integer>> rs = new LinkedList<>();
         this.traversal(root, rs, 1);
