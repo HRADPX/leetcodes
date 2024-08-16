@@ -9,7 +9,7 @@ import com.hr.utils.ReflectUtils;
  * @author huangran <huangran@kuaishou.com>
  * Created on 2024-04-02
  */
-public class X_FindClosestElements_658 {
+public class R_FindClosestElements_658 {
 
     // [1,2,3,4,5], k = 4, x = 3  ==> [1,2,6,7]
     // 方法一：找到最接近 x 的值，然后向两边扩散，时间复杂度 O(max(logN + K))
@@ -73,7 +73,7 @@ public class X_FindClosestElements_658 {
     public static void main(String[] args) {
 
         int[] nums = {1, 2, 3};
-        X_FindClosestElements_658 instance = ReflectUtils.getInstance(X_FindClosestElements_658.class);
+        R_FindClosestElements_658 instance = ReflectUtils.getInstance(R_FindClosestElements_658.class);
         System.out.println(instance.findClosestElements(nums, 2, 0));
     }
 }
